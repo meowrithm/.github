@@ -69,6 +69,7 @@ meowpass set STRIPE_KEY sk_live_... --vault <id>
 - **Web App**: [app.meowpass.dev](https://app.meowpass.dev)
 - **Integrations**: [meowpass.dev/integrations](https://meowpass.dev/integrations)
 - **npm**: [@meowlabs/meowpass-mcp](https://www.npmjs.com/package/@meowlabs/meowpass-mcp)
+- **Discord**: [Join our community](https://discord.gg/WAtcmYTj)
 - **Contact**: hello@meowpass.dev
 
 ---
