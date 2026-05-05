@@ -12,9 +12,9 @@ We build tools that make developers' lives easier — starting with secret manag
 
 ## MeowPass
 
-**CLI-first, E2E encrypted secret management for developers.**
+**The first AI-native, E2E encrypted secret manager for developers.**
 
-Stop losing API keys in Slack DMs. MeowPass is an encrypted vault for your secrets — API keys, database credentials, .env files — with a CLI, Chrome extension, and AI agent integrations.
+Stop losing API keys in Slack DMs. MeowPass is an encrypted vault for your secrets — API keys, database credentials, .env files — with a CLI, web app, Chrome extension, and built-in AI agent integration.
 
 ### How it works
 
@@ -33,27 +33,40 @@ meowpass vault create my-project
 meowpass set STRIPE_KEY sk_live_... --vault <id>
 ```
 
-### Ecosystem
+---
 
-| Tool | Install | Description |
-|------|---------|-------------|
-| **CLI** | `brew install chpecson/tap/meowpass` | Terminal-first secret management |
-| **Chrome Extension** | [Download](https://github.com/meowrithm/meowpass-extension/releases/latest) | Manage secrets from your browser |
-| **MCP Server** | `npx @meowlabs/meowpass-mcp` | AI agent integration (Claude Code, Cursor, Windsurf) |
-| **Claude Code Skill** | `npx skills@latest add meowrithm/meowpass-skill` | Natural language secret management |
+## Open Source Projects
 
-### Plans
+| Repo | Description | Install |
+|------|-------------|---------|
+| [`meowpass-cli`](https://github.com/meowrithm/meowpass-cli) | CLI for secret management (Go, Cobra) | `brew install chpecson/tap/meowpass` |
+| [`meowpass-app`](https://github.com/meowrithm/meowpass-app) | Web app — vault manager in the browser | [app.meowpass.dev](https://app.meowpass.dev) |
+| [`meowpass-extension`](https://github.com/meowrithm/meowpass-extension) | Chrome extension | [Download](https://github.com/meowrithm/meowpass-extension/releases/latest) |
+| [`meowpass-skill`](https://github.com/meowrithm/meowpass-skill) | Claude Code skill | `npx skills@latest add meowrithm/meowpass-skill` |
+
+### Also on npm
+
+| Package | Description | Install |
+|---------|-------------|---------|
+| [`@meowlabs/meowpass-mcp`](https://www.npmjs.com/package/@meowlabs/meowpass-mcp) | MCP server for AI agents (Claude Code, Cursor, Windsurf) | `npx @meowlabs/meowpass-mcp` |
+
+---
+
+## Pricing
 
 | | Developer | Pro | Team |
 |---|---|---|---|
-| **Price** | Free | $5/mo | $9/user/mo |
+| **Price** | Free | $3/mo | $6/user/mo |
 | **Vaults** | 1 | Unlimited | Unlimited |
 | **Secrets** | 50 | Unlimited | Unlimited |
-| **Features** | CLI, Extension | + .env sync, API access | + Shared vaults, RBAC, Audit logs |
+| **Features** | CLI, Extension, Web App | + .env sync, MCP, API keys | + Shared vaults, RBAC, Audit logs |
 
-### Links
+---
+
+## Links
 
 - **Website**: [meowpass.dev](https://meowpass.dev)
+- **Web App**: [app.meowpass.dev](https://app.meowpass.dev)
 - **Integrations**: [meowpass.dev/integrations](https://meowpass.dev/integrations)
 - **npm**: [@meowlabs/meowpass-mcp](https://www.npmjs.com/package/@meowlabs/meowpass-mcp)
 - **Contact**: hello@meowpass.dev
@@ -62,6 +75,8 @@ meowpass set STRIPE_KEY sk_live_... --vault <id>
 
 <div align="center">
 
-**Built with** Go, Next.js, AWS Lambda, Neon Postgres, WebCrypto
+**Built with** Go · Next.js · TypeScript · AWS Lambda · Neon Postgres · WebCrypto · Argon2id
+
+**Open source** · MIT License
 
 </div>
