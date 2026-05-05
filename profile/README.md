@@ -27,7 +27,7 @@ Your secrets are encrypted on your device before they touch the server. Zero-kno
 ### Get started
 
 ```bash
-brew install chpecson/tap/meowpass
+brew install meowrithm/tap/meowpass
 meowpass login
 meowpass vault create my-project
 meowpass set STRIPE_KEY sk_live_... --vault <id>
@@ -39,7 +39,7 @@ meowpass set STRIPE_KEY sk_live_... --vault <id>
 
 | Repo | Description | Install |
 |------|-------------|---------|
-| [`meowpass-cli`](https://github.com/meowrithm/meowpass-cli) | CLI for secret management (Go, Cobra) | `brew install chpecson/tap/meowpass` |
+| [`meowpass-cli`](https://github.com/meowrithm/meowpass-cli) | CLI for secret management (Go, Cobra) | `brew install meowrithm/tap/meowpass` |
 | [`meowpass-app`](https://github.com/meowrithm/meowpass-app) | Web app — vault manager in the browser | [app.meowpass.dev](https://app.meowpass.dev) |
 | [`meowpass-extension`](https://github.com/meowrithm/meowpass-extension) | Chrome extension | [Download](https://github.com/meowrithm/meowpass-extension/releases/latest) |
 | [`meowpass-skill`](https://github.com/meowrithm/meowpass-skill) | Claude Code skill | `npx skills@latest add meowrithm/meowpass-skill` |
